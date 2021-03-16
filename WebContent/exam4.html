@@ -9,7 +9,23 @@
 	<h2>이름 키 나이 = 테이블로 출력하시오</h2>
 
 <script>
-	document.write();
+	var name = "김건우";
+	var tall = 180.55;
+	var age = 30;
+	document.write("<table width='300' border='1'>");
+	document.write("<tr bgcolor='limegreen'>");
+	document.write("<td>이름</td>");
+	document.write("<td>키</td>");
+	document.write("<td>나이</td>");
+	document.write("</tr>");
+	
+	document.write("<tr>");
+	document.write("<td>" +name+ "</td>");	
+	document.write("<td>" +tall+ "</td>");
+	document.write("<td>" +age+ "</td>");
+	document.write("</tr>");
+	
+	document.write("</table>");
 </script>
 </body>
 </html>

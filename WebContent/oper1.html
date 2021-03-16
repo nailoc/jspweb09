@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb09</title>
+<style type="text/css"></style>
+</head>
+<body>
+	<h2>두개의 숫자(토익, 이수학점)를 입력받아서 졸업여부</h2>
+
+<script>
+	toeic = parseInt( prompt("당신의 토익점수는?","") );
+	score = parseInt( prompt("당신의 이수학점은?","") );
+	
+	// A경우 - 토익 700점이상이면 참
+	// B경우 - 이수학점이 140점이상이면 참
+	
+	// A이고 B이면 졸업
+	if(toeic>=700 && score>= 140) {
+		alert("졸업");
+	}else if(score>=140 && toeic<700) { 
+		alert("수료")
+	}else {
+		alert("졸업불가");
+	}
+	// B이고 A가 아니면 수료
+	// A아니고 B아니면 졸업불가
+
+</script>
+</body>
+</html>
