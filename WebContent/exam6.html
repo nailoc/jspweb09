@@ -2,15 +2,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>jspweb</title>
+<title>jspweb09</title>
 <style type="text/css"></style>
 </head>
 <body>
-
-
+	
+	<h2>조건문 예제</h2>
 <script>
 	// 나이입력 age 저장
 	// 20세 이상이면 성인입니다 출력
+	input = prompt("당신의 나이는?","");
+	age = parseInt(input);
+	// parseFloat -> 실수값 변경
+	if(age>=20) {
+		alert("성인입니다!");
+	}
 </script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb0_</title>
+<link rel="stylesheet" href="css/style.css"></link>
+<style type="text/css"></style>
+</head>
+<body>
+	<h2>두개의 랜덤숫자를 발생시켜서 출력하시오
+	<br>단, 두 숫자가 같지 않게 만드시오
+	</h2>	
+	
+
+<script>
+    num1=0;
+    num2=0;
+	do{ // 두수를 비교할려면 발생 1번 - 같은지 비교해서 같은 반복
+		num1 = parseInt(Math.random()*10)+1;
+		num2 = parseInt(Math.random()*10)+1;
+	}while(num1==num2);
+	
+	document.write(num1 +"<br>");
+	document.write(num2 +"<br>");
+</script>
+</body>
+</html>

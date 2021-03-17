@@ -3,14 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <title>jspweb</title>
-<style type="text/css"></style>
+<style type="text/css">
+	img {
+			width: 100px;
+			height: 100px;
+		}
+</style>
 </head>
 <body>
 
 
 <script>
+	// js 이미지 태그 출력
+	
 	// score 점수를 입력해서
 	// 학점을 출력하기
+	input = prompt("점수를 입력하시오","");
+	score = parseInt(input);
+	
+	document.write("<p>당신의 입력점수는:" + score+"</p>");
+	document.write("<p>학점은 다음과 같습니다:</p>");
+	if(score>=90) {
+		document.write("<img src='images/a.jpg'>");
+	}else if(score>=80) {
+		document.write("<img src='images/b.jpg'>");
+	}else if(score>=70) {
+		document.write("<img src='images/c.jpg'>");
+	}else if(score>=60) {
+		document.write("<img src='images/d.jpg'>");
+	}else {
+		document.write("<img src='images/f.jpg'>");
+	}// getElementById 로 찾고 src 를 수정해도 가능함
 </script>
 </body>
 </html>

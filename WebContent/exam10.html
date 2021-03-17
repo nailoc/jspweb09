@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>jspweb</title>
-<style type="text/css"></style>
+<style type="text/css">
+	
+</style>
 </head>
 <body>
 
@@ -13,6 +15,26 @@
 	// 점수 80~90점 다시 나눠서 80-84 B , 85-89 B+ 출력
 	// 70점대도 동일
 	// 70점이하는 D로 출력하시오
+	input = prompt("점수를 입력하시오","");
+	score = parseInt(input);
+	grade = "";
+	
+	if(score>=90) {
+		grade = "A";
+		if(score>=95) {
+			grade += "+";
+		}
+	}else if(score>=80) {
+		grade = "B";
+		if(score>=85) {
+			grade += "+";
+		}
+		
+	}else{
+		
+	}
+	
+	document.write(score+" => "+grade);
 </script>
 </body>
 </html>
